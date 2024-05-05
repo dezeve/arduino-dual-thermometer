@@ -220,18 +220,30 @@ void loop() {
   }
 
   if (roundedTemperature > 30) {
+    
     sevenDisplayNumber = roundedTemperature - 30;
+    
     turnOnEndLed();
+    turnOffMiddleLed();
+    turnOffStartLed();
   }
 
   else if (roundedTemperature > 20) {
+    
     sevenDisplayNumber = roundedTemperature - 20;
+    
     turnOnMiddleLed();
+    turnOffStartLed();
+    turnOffEndLed();
   }
 
   else if (roundedTemperature > 10) {
+    
     sevenDisplayNumber = roundedTemperature - 10;
+    
     turnOnStartLed();
+    turnOffMiddleLed();
+    turnOffEndLed();
   }
 
   else {
