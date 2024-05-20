@@ -10,5 +10,9 @@ In order for the thermometer to work properly, **Seven-segment display cables** 
 
 The temperature values are 10 degrees for the start LED, 20 degrees for the middle LED and 30 degrees for the end LED. The temperature is reached by adding the temperature obtained from the LEDs and the temperature on the Seven-segment display. The project operates between 0 and 39 (0 to 39 inclusive) degrees.
 
+### How should I connect the pins of the Seven-segment display?
+
+You need to connect the pins of the Seven-segment Display to pins 2-9 (including 2 and 9) on the Arduino in a **counterclockwise direction starting from the bottom left**.
+
 ### Important Note:
 As far as I know, there are two types of anode and cathode in Seven-segment displays. If for this reason the code does not give proper results in the Seven-segment display, **you can solve the problem by replacing LOWs with HIGHs and HIGHs with LOWs in the Seven-segment display functions**.
