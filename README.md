@@ -12,7 +12,7 @@ The temperature values are 10 degrees for the start LED, 20 degrees for the midd
 
 ### How should I connect the pins of the Seven-segment display?
 
-You need to connect the pins of the Seven-segment Display to pins 2-9 (including 2 and 9) on the Arduino in a **counterclockwise direction starting from the bottom left**.
+You need to connect the pins of the Seven-segment display to pins 2-9 (including 2 and 9) on the Arduino in a **counterclockwise direction starting from the bottom left**. These pins are **only used for LEDs**.
 
 ### Important Note:
 As far as I know, there are two types of anode and cathode in Seven-segment displays. If for this reason the code does not give proper results in the Seven-segment display, **you can solve the problem by replacing LOWs with HIGHs and HIGHs with LOWs in the Seven-segment display functions**.
